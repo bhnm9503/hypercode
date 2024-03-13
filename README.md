@@ -1,10 +1,11 @@
 # hypercode
 Code
 
-// SPDX-License-Identifier: GPL-3.0.1
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.9.0;
 
-interface Token {
+interface Token
+{
     function balanceOf(address _a) external view returns (uint);
     function transfer(address _to, uint _amt) external;
 }
@@ -24,7 +25,8 @@ contract TokenCorrect is Token {
     }
 }
 
-contract Test {
+contract Test
+{
     function property_transfer(address _token, address _to, uint _amt) public {
         require(_to != address(this));
 
