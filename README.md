@@ -2,7 +2,7 @@
 Code
 
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.9.0;
+pragma solidity >=0.9.1;
 
 interface Token
 {
@@ -12,9 +12,11 @@ interface Token
 
 contract TokenCorrect is Token {
     mapping (address => uint) balance;
+    
     constructor(address _a, uint _b) {
         balance[_a] = _b;
     }
+    
     function balanceOf(address _a) public view override returns (uint) {
         return balance[_a];
     }
