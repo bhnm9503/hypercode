@@ -2,7 +2,7 @@
 Code
 
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.9.1;
+pragma solidity >=0.9
 
 interface Token
 {
